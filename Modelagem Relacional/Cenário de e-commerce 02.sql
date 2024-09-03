@@ -53,12 +53,12 @@ CREATE TABLE Estoque (
 
 -- Inserção de exemplos de cliente, produto, pedido e estoque.
 INSERT INTO Cliente (cliente_id, nome, endereco, telefone)
-VALUES (1, 'João', 'Rua A, 123', '123-4567');
+VALUES (1, 'Renato', 'Rua Tiburcio Rodrigues, 100', '8598888-8888');
 
 INSERT INTO Produto (produto_id, nome, preco)
-VALUES (1, 'Produto A', 60.00),
-       (2, 'Produto B', 40.00),
-       (3, 'Produto C', 70.00);
+VALUES (1, 'Produto A', 40.00),
+       (2, 'Produto B', 80.00),
+       (3, 'Produto C', 60.00);
 
 INSERT INTO Pedido (pedido_id, cliente_id)
 VALUES (1, 1);
@@ -68,8 +68,8 @@ VALUES (1, 1, 1, 2),
        (2, 1, 2, 3);
 
 INSERT INTO Fornecedor (fornecedor_id, nome)
-VALUES (1, 'Fornecedor X'),
-       (2, 'Fornecedor Y');
+VALUES (1, 'Fornecedor A'),
+       (2, 'Fornecedor B');
 
 INSERT INTO Estoque (estoque_id, fornecedor_id, produto_id, quantidade)
 VALUES (1, 1, 1, 5),
